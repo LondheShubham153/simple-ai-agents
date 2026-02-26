@@ -5,3 +5,4 @@ __pycache__/
 .claude/
 *.pyc
 uv.lock
+CLAUDE.md
