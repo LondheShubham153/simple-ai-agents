@@ -1,0 +1,9 @@
+[project]
+name = "simple-bedrock-agent"
+version = "0.1.0"
+description = "A simple interactive AI agent using Bedrock Converse API with manual tool calling"
+requires-python = ">=3.10"
+dependencies = [
+    "boto3>=1.26.0",
+    "httpx>=0.27.0",
+]

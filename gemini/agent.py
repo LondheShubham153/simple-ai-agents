@@ -17,7 +17,7 @@ SYSTEM_INSTRUCTION = (
     "You are a helpful agent that can use tools to answer questions. "
     "If no tools are needed, respond in haikus."
 )
-MODEL = "gemini-2.5-flash"
+MODEL = "gemini-3.1-pro-preview"
 
 
 async def main():
