@@ -1,0 +1,19 @@
+# Gemini agent
+google-genai>=1.0.0
+python-dotenv>=1.0.0
+
+# LangChain agent
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-ollama>=0.2.0
+langgraph>=0.2.0
+
+# Strands agent
+strands-agents>=0.1.0
+strands-agents-tools>=0.1.0
+
+# Bedrock agent
+boto3>=1.26.0
+
+# Shared
+httpx>=0.27.0
