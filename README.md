@@ -38,7 +38,31 @@ pip install langchain langchain-ollama langgraph
 python agent.py
 ```
 
-### `strands/` — coming soon
+### `strands/` — Strands Agents + Bedrock
+
+Uses the Strands Agents SDK with Amazon Bedrock (Claude). Tools are defined with the `@tool` decorator and the agent handles the entire tool-calling loop automatically.
+
+**Tools:** `get_ip_address`, `get_location`, `get_weather`
+
+```bash
+cd strands
+python -m venv .venv && source .venv/bin/activate
+pip install strands-agents strands-agents-tools httpx
+python agent.py               # needs AWS credentials configured
+```
+
+### `bedrock/` — Bedrock Converse API (boto3)
+
+Uses the Bedrock Converse API directly via boto3 with a manual tool-calling loop — the same pattern as the Gemini agent, but with Claude on Bedrock.
+
+**Tools:** `get_ip_address`, `get_location`, `get_weather`
+
+```bash
+cd bedrock
+python -m venv .venv && source .venv/bin/activate
+pip install boto3 httpx
+python agent.py               # needs AWS credentials configured
+```
 
 ## How It Works
 
